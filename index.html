@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <!--   <h1>Time Slot Booking and Form</h1> -->
+    <div class="container">
+        <div class="time-slots">
+            <h2>Register a Worker</h2>
+            <div class="slots" id="slots"></div>
+        </div>
+        <div class="search-container">
+            <div class="search-tags">
+                <!-- Tags selected by the user will be displayed here -->
+            </div>
+            <input type="text" id="tag-input" list="tags-list" placeholder="Search Apartment">
+            <datalist id="tags-list"></datalist>
+            <button id="add-tag">Add Apartment</button>
+        </div>
+        <div class="form-container">
+            <h2>Additional Information</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="aadhar">Aadhar Number:</label>
+            <input type="text" id="aadhar" name="aadhar" required>
+            <br>
+            <label for="mobile">Mobile Number:</label>
+            <input type="text" id="mobile" name="mobile" required>
+            <br>
+            <div class="gender-options">
+                <label for="gender">Gender:</label>
+                <input type="radio" id="male" name="gender" value="MALE" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="FEMALE" required>
+                <label for="female">Female</label>
+            </div>
+            <br>
+            <div class="service-options">
+                <label for="services">Services:</label>
+                <input type="checkbox" id="maid" name="services" value="Maid">
+                <label for="maid">Maid</label>
+                <input type="checkbox" id="nanny" name="services" value="Nanny">
+                <label for="nanny">Nanny</label>
+                <input type="checkbox" id="cook" name="services" value="Cook">
+                <label for="cook">Cook</label>
+            </div>
+        </div>
+        <button id="submit-button">Book Slots and Submit Form</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
